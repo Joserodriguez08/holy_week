@@ -1,64 +1,67 @@
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(37, 148, 212);
-  }
-  
-  /* estilo del titulo */
-  h1 {
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: black;
-  }
-  
-  /* crear dos columnas */
-  nav {
-    float: left;
-    width: 30%;
-    height: 300px; 
-    padding: 20px;
-    background: white
-  }
-  
-  /* estilo de lista */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
 
+  }
+
+  body {background-color: aqua;}
+
+.titulo1 {
+    text-align: center;
+} 
+
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
     
   }
   
-  article {
+  .menu a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+  }
+  
+  .main {
     float: left;
-    padding: 20px;
-    width: 70%;
-    height: 300px;
-    background-color: darkgrey;
-  }
-  
-  /* limpiar columnas flotantes */
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* estilo del footer */
-  footer {
-    background-color: #777;
-    padding: 10px;
+    width: 60%;
+    padding: 0 20px;
     text-align: center;
-    color: white;
   }
   
+  .right {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
   
-  @media (max-width: 600px) {
-    nav, article {
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
       width: 100%;
-      height: auto;
     }
   }
+  .parrafo {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: blanchedalmond;
+  }
+  .imagen {
+    height: 400px;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    border-radius: 15px;
+    float: left;
+    padding: 5px;
+}
